@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidation.Extensions.Br.Test", "test\FluentValidation.Extensions.Br.Test\FluentValidation.Extensions.Br.Test.csproj", "{08D3645C-13D0-4819-9639-48AD7BE091BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidation.Extensions.Br", "src\FluentValidation.Extensions.Br\FluentValidation.Extensions.Br.csproj", "{8FBC1BB6-579D-4CAD-AA47-EB6D122B5B4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08D3645C-13D0-4819-9639-48AD7BE091BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D3645C-13D0-4819-9639-48AD7BE091BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D3645C-13D0-4819-9639-48AD7BE091BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D3645C-13D0-4819-9639-48AD7BE091BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBC1BB6-579D-4CAD-AA47-EB6D122B5B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBC1BB6-579D-4CAD-AA47-EB6D122B5B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBC1BB6-579D-4CAD-AA47-EB6D122B5B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBC1BB6-579D-4CAD-AA47-EB6D122B5B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5DB2757-1BD1-4CF9-BC85-A5CB611FA643}
+	EndGlobalSection
+EndGlobal
