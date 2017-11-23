@@ -14,6 +14,9 @@ dotnet_csproj:
 nuget:
   account_feed: true
   project_feed: true
+artifacts:
+- path: '**\*.nupkg'
+  name: NuGet
 before_build:
 - cmd: >-
     nuget restore
