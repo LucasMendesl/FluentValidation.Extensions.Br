@@ -1,5 +1,7 @@
 ﻿namespace FluentValidation
 {
+    using FluentValidation.Extensions.Br.Utilities;
+    using FluentValidation.Extensions.Br.Validators;
     using Validators;
 
     /// <summary>
@@ -29,6 +31,12 @@
         public static IRuleBuilderOptions<T, string> IsValidCPF<T>(this IRuleBuilder<T, string> ruleBuilder)
         {
             return ruleBuilder.SetValidator(new CPFValidator());
+        }
+
+        public static IRuleBuilderOptions<T, string> IsValidPIS<T>(this IRuleBuilder<T, string> ruleBuilder)
+        {
+            var utilities = new ValidatorUtilities();
+            return ruleBuilder.SetValidator(new PISValidator(utilities));
         }
     }
 }
