@@ -8,6 +8,8 @@ namespace FluentValidation.Extensions.Br.Test
         [Theory]
         [InlineData("05078277508")]
         [InlineData("84114792322")]
+        [InlineData("91994330670")]
+        [InlineData("45085400980")]
         [InlineData("634.66913.68-9")]
         [InlineData("619.10409.08-2")]
         [Trait("PIS", "Valid PIS")]

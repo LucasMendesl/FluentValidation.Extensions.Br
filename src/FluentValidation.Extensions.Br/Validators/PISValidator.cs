@@ -40,7 +40,7 @@ namespace FluentValidation.Extensions.Br.Validators
                 sum += digits[index] * FirstMultiplierCollection[index];
 
             var rest = sum % 11;
-            var checkDigit = 11 - rest;
+            var checkDigit = rest > 1 ? 11 - rest : 0;
 
             return digits[10] == checkDigit;
         }
