@@ -16,7 +16,7 @@ public class Person
 {
     public string Name { get; set; }
     public string CPF  { get; set; }
-	public string PIS { get; set; }
+    public string PIS { get; set; }
 }
 
 public class PersonValidator : AbstractValidator<Person>
@@ -25,7 +25,7 @@ public class PersonValidator : AbstractValidator<Person>
   {
       RuleFor(employee => employee.Name).NotNull();
       RuleFor(employee => employee.CPF).IsValidCPF();
-	  RuleFor(employee => employee.PIS).IsValidPIS();
+      RuleFor(employee => employee.PIS).IsValidPIS();
   }
 }
 ```
