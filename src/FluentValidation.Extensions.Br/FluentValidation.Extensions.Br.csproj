@@ -2,6 +2,28 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Extensions.FluentValidation.Br</PackageId>
+    <Product>Extensions.FluentValidation.Br</Product>
+    <Title>Extensions.FluentValidation.Br</Title>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>Lucas Mendes Loureiro</Authors>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>An extension of the fluent validation with a set of Brazilian validations</Description>
+    <Copyright>Copyright © 2017 Lucas Mendes Loureiro</Copyright>
+    <PackageProjectUrl>https://github.com/LucasMendesl/FluentValidation.Extensions.Br</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/LucasMendesl/FluentValidation.Extensions.Br</RepositoryUrl>
+    <PackageLicense>https://github.com/LucasMendesl/FluentValidation.Extensions.Br/blob/master/LICENSE</PackageLicense>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <PackageTags>FluentValidation validation validator extension brazilian</PackageTags>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
