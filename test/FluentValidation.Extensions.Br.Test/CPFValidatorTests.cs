@@ -33,6 +33,8 @@
         [Theory]
         [InlineData("144.442.344-57")]
         [InlineData("543.434.321-76")]
+        [InlineData("A822.420.106-62")]
+        [InlineData("822.420.106-62a")]
         public void When_CPF_Is_Invalid_Then_The_Validator_Should_Fail(string cpf)
         {
             TestExtensionsValidator validator = new TestExtensionsValidator(x => x.RuleFor(r => r.CPF).IsValidCPF());

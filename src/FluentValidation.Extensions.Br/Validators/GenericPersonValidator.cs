@@ -24,7 +24,7 @@
         protected override bool IsValid(PropertyValidatorContext context)
         {
             var value = context.PropertyValue as string ?? string.Empty;
-            value = Regex.Replace(value, "[^0-9]", ""); 
+            value = Regex.Replace(value, "[^a-zA-Z0-9]", "");
 
             if (IsValidLength(value) || 
                 AllDigitsAreEqual(value) || 
