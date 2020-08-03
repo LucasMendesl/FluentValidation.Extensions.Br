@@ -33,6 +33,8 @@
         [Theory]
         [InlineData("14.442.344/1210-57")] 
         [InlineData("11.434.3215/00123-57")] 
+        [InlineData("A11.434.325/0001-07")]
+        [InlineData("11.434.325/0001-07a")]
         public void When_CNPJ_Is_Invalid_Then_The_Validator_Should_Fail (string cnpj)
         {
             TestExtensionsValidator validator = new TestExtensionsValidator(x => x.RuleFor(r => r.CNPJ).IsValidCNPJ());
