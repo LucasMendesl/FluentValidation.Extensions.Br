@@ -1,19 +1,19 @@
 
 # FluentValidation.Extensions.Br
-> An extension of the fluent validation with a set of Brazilian validations
+> Uma extensão da biblioteca FluentValidation com um conjunto de validações PT-BR
 
 [![Nuget](http://img.shields.io/nuget/v/Extensions.FluentValidation.Br.svg?maxAge=10800)](https://www.nuget.org/packages/Extensions.FluentValidation.Br/)
 
-[🇧🇷 Switch to portuguese version](./README.pt_br.md)
+[🇺🇸 Trocar para a versão em inglês](./README.md)
 
-## Main Goal
-The prupose of this library is create a extension with brazilian´s validation to [FluentValidation](https://github.com/JeremySkinner/FluentValidation) package.
+## Objetivo Principal
+Essa biblioteca tem como objetivo principal criar um conjunto de validações de atributos brasileiros para o pacote [FluentValidation](https://github.com/JeremySkinner/FluentValidation)
 
-## Description
-This library was designed to provide a set of brazilian´s attributes validation such as CPF, CNPJ
+## Descrição
+Essa biblioteca foi desenvolvida para fornecer um conjunto de validações para atributos brasileiros como CPF, CNPJ etc.
 
-## Install 
-Install with Package Manager
+## Instalação 
+Instalando com Package Manager
 
 **Nuget**
 
@@ -21,7 +21,7 @@ Install with Package Manager
 PM > Install-Package Extensions.FluentValidation.Br
 ```
 
-Install with .NET CLI
+Instalado com .NET CLI
 
 **.NET CLI**
 
@@ -29,7 +29,7 @@ Install with .NET CLI
 dotnet add package Extensions.FluentValidation.Br
 ```
 
-## How to Use ?
+## Como usar ?
 ```csharp
 public class Person
 {
@@ -49,14 +49,13 @@ public class PersonValidator : AbstractValidator<Person>
 }
 ```
 
-## Run Tests
+## Executando os testes
 ```
 dotnet test
 ```
 
-## Contributing
-Contributions via pull requests are welcome :-).
+## Contribuindo
+Contribuições via Pull Request são muito bem vindas :-)
 
-## License
-
+## Licença
 MIT © [Lucas Mendes Loureiro](http://github.com/lucasmendesl)
