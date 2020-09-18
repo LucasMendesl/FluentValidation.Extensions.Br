@@ -1,0 +1,25 @@
+{
+  "name": "generate-changelog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "@actions/github": "^4.0.0",
+    "bluebird": "^3.7.2",
+    "cheerio": "^1.0.0-rc.3",
+    "conventional-changelog": "^3.1.23",
+    "conventional-changelog-config-spec": "^2.1.0",
+    "conventional-changelog-conventionalcommits": "^4.4.0",
+    "git-semver-tags": "^4.1.0",
+    "glob": "^7.1.6",
+    "semver": "^7.3.2",
+    "stream-to-promise": "^3.0.0"
+  }
+}
