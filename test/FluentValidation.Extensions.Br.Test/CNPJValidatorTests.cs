@@ -41,6 +41,7 @@
             ValidationResult result = validator.Validate(new Person { CNPJ = cnpj });
 
             Assert.False(result.IsValid);
+            Assert.Equal(result.Errors.First().ErrorMessage, "O CNPJ é inválido!");
         }
     }
 }

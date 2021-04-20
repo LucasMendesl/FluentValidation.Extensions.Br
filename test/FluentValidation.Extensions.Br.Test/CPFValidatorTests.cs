@@ -41,6 +41,7 @@
             ValidationResult result = validator.Validate(new Person { CPF = cpf });
 
             Assert.False(result.IsValid);
+            Assert.Equal(result.Errors.First().ErrorMessage, "O CPF é inválido!");
         }
 
     }
