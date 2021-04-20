@@ -16,7 +16,7 @@
         /// <returns>a rule builder with cnpj validation included</returns>
         public static IRuleBuilderOptions<T, string> IsValidCNPJ<T>(this IRuleBuilder<T, string> ruleBuilder)
         {
-            return ruleBuilder.SetValidator(new CNPJValidator());
+            return ruleBuilder.SetValidator(new CNPJValidator<T, string>());
         }
 
         /// <summary>
@@ -28,7 +28,7 @@
         /// <returns>a rule builder with cnpj validation included</returns>
         public static IRuleBuilderOptions<T, string> IsValidCPF<T>(this IRuleBuilder<T, string> ruleBuilder)
         {
-            return ruleBuilder.SetValidator(new CPFValidator());
+            return ruleBuilder.SetValidator(new CPFValidator<T, string>());
         }
     }
 }
