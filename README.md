@@ -10,7 +10,7 @@
 The prupose of this library is create a extension with brazilian´s validation to [FluentValidation](https://github.com/JeremySkinner/FluentValidation) package.
 
 ## Description
-This library was designed to provide a set of brazilian´s attributes validation such as CPF, CNPJ, UF
+This library was designed to provide a set of brazilian´s attributes validation such as CPF, CNPJ, PIS/PASEP, UF
 
 ## Install 
 Install with Package Manager
@@ -37,6 +37,7 @@ public class Person
     public string CPF  { get; set; }
     public string CNPJ { get; set; }
     public string UF { get; set; }
+    public string PISPASEP { get; set; }
 }
 
 public class PersonValidator : AbstractValidator<Person>
@@ -47,6 +48,7 @@ public class PersonValidator : AbstractValidator<Person>
       RuleFor(employee => employee.CPF).IsValidCPF();
       RuleFor(employee => employee.CNPJ).IsValidCNPJ();
       RuleFor(employee => employee.UF).IsValidUF();
+      RuleFor(employee => employee.PISPASEP).IsValidPISPASEP();
   }
 }
 ```
