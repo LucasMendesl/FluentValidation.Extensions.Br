@@ -10,7 +10,7 @@
 Essa biblioteca tem como objetivo principal criar um conjunto de validações de atributos brasileiros para o pacote [FluentValidation](https://github.com/JeremySkinner/FluentValidation)
 
 ## Descrição
-Essa biblioteca foi desenvolvida para fornecer um conjunto de validações para atributos brasileiros como CPF, CNPJ etc.
+Essa biblioteca foi desenvolvida para fornecer um conjunto de validações para atributos brasileiros como CPF, CNPJ, UF, etc.
 
 ## Instalação 
 Instalando com Package Manager
@@ -36,6 +36,7 @@ public class Person
     public string Name { get; set; }
     public string CPF  { get; set; }
     public string CNPJ { get; set; }
+    public string UF { get; set; }
 }
 
 public class PersonValidator : AbstractValidator<Person>
@@ -45,6 +46,7 @@ public class PersonValidator : AbstractValidator<Person>
       RuleFor(employee => employee.Name).NotNull();
       RuleFor(employee => employee.CPF).IsValidCPF();
       RuleFor(employee => employee.CNPJ).IsValidCNPJ();
+      RuleFor(employee => employee.UF).IsValidUF();
   }
 }
 ```

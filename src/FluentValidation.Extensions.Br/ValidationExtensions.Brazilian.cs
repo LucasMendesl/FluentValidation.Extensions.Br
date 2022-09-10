@@ -1,5 +1,6 @@
 ﻿namespace FluentValidation
 {
+    using System;
     using Validators;
 
     /// <summary>
@@ -29,6 +30,18 @@
         public static IRuleBuilderOptions<T, string> IsValidCPF<T>(this IRuleBuilder<T, string> ruleBuilder)
         {
             return ruleBuilder.SetValidator(new CPFValidator<T, string>());
+        }
+
+        /// <summary>
+        /// Defines a 'UF' validator on the current rule builder.
+        /// Validation will fail if the property is null, an empty or the value is a invalid UF
+        /// </summary>
+        /// <typeparam name="T">Type of object being validated</typeparam>
+        /// <param name="ruleBuilder">The rule builder on which the validator should be defined</param>
+        /// <returns>a rule builder with uf validation included</returns>
+        public static IRuleBuilderOptions<T, string> IsValidUF<T>(this IRuleBuilder<T, string> ruleBuilder)
+        {
+            return ruleBuilder.SetValidator(new UFValidator<T, string>());
         }
     }
 }

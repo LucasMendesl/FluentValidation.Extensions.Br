@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-conventions](https://www.conventionalcommits.org/en/v1.0.0/#specification) for commit guidelines.
 
+
+## 1.0.3 (2021-09-10)
+
+
+### 🎉 Features
+
+* **project:** including validation for uf
+
+
 ### 1.0.2 (2021-04-21)
 
 
